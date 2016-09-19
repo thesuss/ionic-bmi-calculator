@@ -2,6 +2,38 @@
   <ion-content>
     <div class="row">
       <div class="col">
+        <div class="list">
+            <label>
+              <input type="radio" ng-model="data.unit" value="metric">
+              Metric
+            </label><br/>
+            <label>
+              <input type="radio" ng-model="data.unit" value="imperial">
+              Imperial
+            </label><br/>
+            <tt>You chose: {{data.unit}}</tt><br/>
+          <label class="item item-input">
+            <input type="text" class="item item-input" placeholder="Name" ng-model="data.name">
+          </label>
+          <label class="item item-input">
+            <input type="number" class="item item-input" placeholder="Weight" ng-model="data.weight">
+          </label>
+          <label class="item item-input">
+            <input type="number" class="item item-input" placeholder="Height" ng-model="data.height">
+          </label>
+          <button class="button button-full button-calm" ng-click="calculateBMI()">Calculate</button>
+        </div>
+
+        <div class="card" ng-if="person">
+          <div class="item item-divider">
+            BMI Calculation
+          </div>
+          <div class="item item-text-wrap">
+            <p>Person: Weight {{person.weight}}, Height {{person.height}}</p>
+            <p>BMI: {{person.bmiValue}}</p>
+            <p><strong>{{person.name}} {{person.bmiMessage}}</strong></p>
+          </div>
+        </div>
 
       </div>
     </div>

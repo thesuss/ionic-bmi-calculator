@@ -26,15 +26,15 @@ BMICalculator.prototype.imperial_bmi = function(obj) {
 
 function setBMIMessage (obj, value, name){
   if (obj.bmiValue < 18.5) {
-    obj.bmiMessage = obj.name + " - You need to gain some weight"
+    obj.bmiMessage = " - You need to gain some weight"
   }
   if (obj.bmiValue > 18.5 && obj.bmiValue < 25) {
-    obj.bmiMessage = obj.name + " - You are of normal BMI"
+    obj.bmiMessage = " - You are of normal BMI"
   }
   if (obj.bmiValue > 25 && obj.bmiValue < 30) {
-    obj.bmiMessage = obj.name + " - You need to loose a little weight"
+    obj.bmiMessage = " - You need to loose a little weight"
   }
   if (obj.bmiValue > 30) {
-    obj.bmiMessage = obj.name + " - You need to loose a lot of weight"
+    obj.bmiMessage = " - You need to loose a lot of weight"
   }
 };
