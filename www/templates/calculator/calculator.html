@@ -4,14 +4,13 @@
       <div class="col">
         <div class="list">
             <label>
-              <input type="radio" ng-model="data.unit" value="metric">
-              Metric
-            </label><br/>
+              <ion-radio ng-model="data.unit" value="metric">
+              Press to calculate with Metric
+            </label>
             <label>
-              <input type="radio" ng-model="data.unit" value="imperial">
-              Imperial
+              <ion-radio ng-model="data.unit" value="imperial">
+              Press to calculate with Imperial
             </label><br/>
-            <tt>You chose: {{data.unit}}</tt><br/>
           <label class="item item-input">
             <input type="text" class="item item-input" placeholder="Name" ng-model="data.name">
           </label>

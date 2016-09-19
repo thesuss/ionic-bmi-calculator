@@ -5,6 +5,7 @@ bmi.controller('BmiController', function($scope) {
   $scope.data = {};
   $scope.calculateBMI = function() {
     var person = new Person({
+      name: $scope.data.name,
       weight: $scope.data.weight,
       height: $scope.data.height
     });
