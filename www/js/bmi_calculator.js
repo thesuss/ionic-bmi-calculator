@@ -24,7 +24,7 @@ BMICalculator.prototype.imperial_bmi = function(obj) {
   }
 };
 
-function setBMIMessage (obj, value, name){
+function setBMIMessage (obj, value){
   if (obj.bmiValue < 18.5) {
     obj.bmiMessage = " - You need to gain some weight"
   }
